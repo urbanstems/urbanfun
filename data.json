@@ -1,0 +1,50 @@
+{
+  "products": [{
+    "id": 1,
+    "name": "Fun Mix",
+    "price": "45"
+  }, {
+    "id": 2,
+    "name": "Sun Mix",
+    "price": "45"
+  }, {
+    "id": 3,
+    "name": "Custom Mix",
+    "price": "45"
+  }, {
+    "id": 4,
+    "name": "",
+    "price": "45"
+  }, {
+    "id": 5,
+    "name": "",
+    "price": "45"
+  }, {
+    "id": 6,
+    "name": "Festive Mix",
+    "price": "45"
+  }, {
+    "id": 7,
+    "name": "Silly Mix",
+    "price": "45"
+  }, {
+    "id": 8,
+    "name": "Beautiful Mix",
+    "price": "45"
+  }],
+  "zipcodes": [
+    "80202",
+    "80203",
+    "80204",
+    "80205",
+    "80206",
+    "80207",
+    "80209",
+    "80210",
+    "80211",
+    "80212",
+    "80214"
+    "80215",
+    "80216"
+  ]
+}

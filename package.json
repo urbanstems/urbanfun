@@ -1,0 +1,23 @@
+{
+  "name": "urbanfun",
+  "version": "0.0.1",
+  "description": "Test project for prospective UrbanStemmers",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanstems/urbanfun.git"
+  },
+  "author": "Chetan Shenoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urbanstems/urbanfun/issues"
+  },
+  "homepage": "https://github.com/urbanstems/urbanfun#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
