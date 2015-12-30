@@ -4,11 +4,13 @@ Welcome Potential UrbanStemmer! We're excited you're willing to take this advent
 
 ## The Challenge
 
-We're expanding to a new city and we need your help! Take the data found in the `data.json` file and store it however you'd like (e.g. hardcode it directly in the request, parse it into a separate file, place it into a simple db, etc).
+We're expanding to a new city and we need your help! Take the data found in the `data.json` file and store it however you'd like (e.g. hardcode it directly in the request, parse it into a separate JSON/JS file, place it into a simple db, etc).
 
-When a user arrives at the site (http://localhost:3000), they must enter the zipcode they're sending flowers. After selecting a zipcode, show them the flowers that are available in that zipcode.
+When a user arrives at the site (http://localhost:3000), they must enter the zipcode they're sending flowers. After selecting a zipcode, your frontend code must `GET /api/products` and only show them the flowers that are available in that zipcode. You are allowed to differentiate which products are available in whichever zipcode. Basically, you can add attributes to the products data but cannot remove.
 
-Feel free to switch the rendering engine. Currently it defaults to `jade`.
+The default rendering engine is `jade`. Switch it to whatever you're most comfortable with (handlebars, etc). Leave your frontend JS un-minified. You can use ES6 if you'd like.
+
+No need to style it properly, we're more concerned with functionality and usage rather than aesthetics.
 
 ## Bonus Challenge #1
 

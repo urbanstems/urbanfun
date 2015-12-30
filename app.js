@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
   });
 });
 
-app.get('/products', function(req, res){
+app.get('/api/products', function(req, res){
   // put in data here to return all products
 });
 
