@@ -6,19 +6,19 @@
   }, {
     "id": 2,
     "name": "Sun Mix",
-    "price": "45"
+    "price": "25"
   }, {
     "id": 3,
     "name": "Custom Mix",
-    "price": "45"
+    "price": "65"
   }, {
     "id": 4,
-    "name": "",
-    "price": "45"
+    "name": "Fancy Mix",
+    "price": "60"
   }, {
     "id": 5,
-    "name": "",
-    "price": "45"
+    "name": "Wonder Mix",
+    "price": "40"
   }, {
     "id": 6,
     "name": "Festive Mix",
@@ -26,11 +26,11 @@
   }, {
     "id": 7,
     "name": "Silly Mix",
-    "price": "45"
+    "price": "15.50"
   }, {
     "id": 8,
     "name": "Beautiful Mix",
-    "price": "45"
+    "price": "35"
   }],
   "zipcodes": [
     "80202",

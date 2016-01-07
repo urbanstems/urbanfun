@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/urbanstems/urbanfun/issues"
   },
-  "homepage": "https://github.com/urbanstems/urbanfun#readme",
-  "dependencies": {
-    "express": "^4.13.3",
-    "jade": "^1.11.0"
-  }
+  "homepage": "https://github.com/urbanstems/urbanfun#readme"
 }
