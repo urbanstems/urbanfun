@@ -4,18 +4,25 @@
 // confirm its an integer and only five digits long
 
 $(document).ready(function() {
-  console.log('working');
   $('#zip').submit(function(event) {
     event.preventDefault();
     var zip = $('input').val();
-    zipCheck(zip);
+    if (zipCheck(zip)) {
+      var zipcode = {zipcode: zip};
+      $.get('api/products', zipcode, function(results){
+        $('#results').html(results);
+      });
+    } else {
+      console.log('not a zip');
+      $('#results').html("Please enter a valid zipcode");
+    };
   });
 });
 
 function zipCheck(num) {
   if (num.length === 5 && Number(num)){
-    console.log(num);
+    return num;
   } else {
-    console.log('Not a zipcode');
+    return false;
   }
 }
