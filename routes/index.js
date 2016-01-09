@@ -1,7 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+var Products = mongoose.model('Products');
 
-/* GET home page. */
+router.get('/api/products', function(req, res) {
+  Products.find(function(err, products){
+    res.send(products);
+  });
+});
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'UrbanFun' });
 });

@@ -2,35 +2,43 @@
   "products": [{
     "id": 1,
     "name": "Fun Mix",
-    "price": "45"
+    "price": "45",
+    "zipAvailable": ["80202", "80205"]
   }, {
     "id": 2,
     "name": "Sun Mix",
-    "price": "25"
+    "price": "25",
+    "zipAvailable": ["80202", "80209"]
   }, {
     "id": 3,
     "name": "Custom Mix",
-    "price": "65"
+    "price": "65",
+    "zipAvailable": ["80202", "80210"]
   }, {
     "id": 4,
     "name": "Fancy Mix",
-    "price": "60"
+    "price": "60",
+    "zipAvailable": ["80202", "80211"]
   }, {
     "id": 5,
     "name": "Wonder Mix",
-    "price": "40"
+    "price": "40",
+    "zipAvailable": ["80202", "80212"]
   }, {
     "id": 6,
     "name": "Festive Mix",
-    "price": "45"
+    "price": "45",
+    "zipAvailable": ["80202", "80213"]
   }, {
     "id": 7,
     "name": "Silly Mix",
-    "price": "15.50"
+    "price": "15.50",
+    "zipAvailable": ["80202", "80214"]
   }, {
     "id": 8,
     "name": "Beautiful Mix",
-    "price": "35"
+    "price": "35",
+    "zipAvailable": ["80202", "80215"]
   }],
   "zipcodes": [
     "80202",
@@ -43,7 +51,7 @@
     "80210",
     "80211",
     "80212",
-    "80214"
+    "80214",
     "80215",
     "80216"
   ]

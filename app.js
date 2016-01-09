@@ -4,14 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
+var db = require('./db/urbanfun');
 var routes = require('./routes/index');
 
 var app = express();
-
-// database
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/urbanfun');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
