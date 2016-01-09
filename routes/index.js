@@ -10,7 +10,7 @@ router.get('/api/products', function(req, res) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'UrbanFun' });
+  res.render('index', { title: 'UrbanFun', scripts: ['./public/javascripts/script.js']});
 });
 
-module.exports = router;
+module.exports = router; 

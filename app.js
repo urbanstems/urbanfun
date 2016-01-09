@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var db = require('./db/urbanfun');
+var models = require('./models/urbanfun');
 var routes = require('./routes/index');
 
 var app = express();
@@ -21,7 +21,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname + 'public')));
+app.use(express.static('public'));
 
 app.use('/', routes);
 
@@ -43,6 +44,7 @@ if (app.get('env') === 'development') {
       message: err.message,
       error: err
     });
+    mongoose.connect('mongodb://localhost/urbanfun');
   });
 }
 
