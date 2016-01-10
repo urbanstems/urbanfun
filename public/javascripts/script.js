@@ -27,12 +27,26 @@ $(document).ready(function() {
       $('#results').html("Please enter a valid zipcode");
     };
   });
-});
 
-function zipCheck(num) {
-  if (num.length === 5 && Number(num)) {
-    return num;
-  } else {
-    return false;
+  function zipCheck(num) {
+    if (num.length === 5 && Number(num)) {
+      return num;
+    } else {
+      return false;
+    }
   }
-}
+
+  mapboxgl.accessToken =
+    'pk.eyJ1Ijoib21hcmltYXllcnN3YWxrZXIiLCJhIjoiODJlZjMxYjhiYjJmZTkwMDBkZDFhYzM2OTU3NDQxZjMifQ.ZjdJwZ3elIR4Ubp0xNC9yw';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v8',
+    center: [-105.0002, 39.7541],
+    zoom: 12
+  });
+
+  map.addControl(new mapboxgl.Geocoder());
+
+  /* geocoder.query('21202', showMap); */
+
+});
