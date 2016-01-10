@@ -10,7 +10,11 @@ router.get('/api/products', function(req, res) {
   });
 });
 
-router.get('/', function(req, res, next) {
+router.get('/form', function(req, res) {
+  res.render('form');
+});
+
+router.get('/', function(req, res) {
   res.render('index', { title: 'UrbanFun'});
 });
 
