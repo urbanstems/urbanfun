@@ -7,6 +7,7 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet'/>
+
   <style>
     body {
       margin: 0;
@@ -21,20 +22,26 @@
       height: 50%;
     }
   </style>
+
 </head>
 
 <body>
 
   <div id='map'></div>
+
   <script>
     mapboxgl.accessToken =
       'pk.eyJ1Ijoib21hcmltYXllcnN3YWxrZXIiLCJhIjoiODJlZjMxYjhiYjJmZTkwMDBkZDFhYzM2OTU3NDQxZjMifQ.ZjdJwZ3elIR4Ubp0xNC9yw';
     var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-      center: [-74.50, 40], // starting position
-      zoom: 9 // starting zoom
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v8',
+      center: [-105.0002, 39.7541],
+      zoom: 12
     });
+
+    map.addControl(new mapboxgl.Geocoder());
+
+   /* geocoder.query('21202', showMap); */
   </script>
 
   {{{body}}}
