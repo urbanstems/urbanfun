@@ -11,12 +11,12 @@ $(document).ready(function() {
     if (zipCheck(zip)) {
       var zipcode = {zipcode: zip};
       $.get('api/products', zipcode, function(results){
+        $('#results').html("Results for zipcode: " + zip);
         results.forEach(function(num) {
-          $('#results').append('<p>' + num.name + '</p>');
+          $('#results').append('<p>' + num.name + ' $' + num.price + '</p>');
         });
       });
     } else {
-      console.log('not a zip');
       $('#results').html("Please enter a valid zipcode");
     };
   });

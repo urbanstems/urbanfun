@@ -5,9 +5,7 @@ var Products = mongoose.model('Products');
 
 router.get('/api/products', function(req, res) {
   var zipcode = req.query.zipcode;
-  console.log('ZIPCODE', zipcode);
   Products.find({zipavailable: zipcode}, function(err, products){
-    console.log(products);
     res.send(products);
   });
 });
