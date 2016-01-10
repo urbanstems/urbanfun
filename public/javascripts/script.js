@@ -41,36 +41,15 @@ $(document).ready(function() {
   }
 
   // map
-  mapboxgl.accessToken =
-    'pk.eyJ1Ijoib21hcmltYXllcnN3YWxrZXIiLCJhIjoiODJlZjMxYjhiYjJmZTkwMDBkZDFhYzM2OTU3NDQxZjMifQ.ZjdJwZ3elIR4Ubp0xNC9yw';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v8',
-    center: [-105.0002, 39.7541],
-    zoom: 12
-  });
+  var map = L.map('map').setView([38.9038829, -77.0360032], 15);
+  
+  L.tileLayer(
+    'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
 
-  map.addControl(new mapboxgl.Geocoder());
-
-  mapbox.featureLayer({
-    // this feature is in the GeoJSON format: see geojson.org
-    // for the full specification
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      // coordinates here are in longitude, latitude order because
-      // x, y is the standard for GeoJSON and many formats
-      coordinates: [-105.0002, 39.7541]
-    },
-    properties: {
-      title: 'Peregrine Espresso',
-      description: '1718 14th St NW, Washington, DC',
-      // one can customize markers by adding simplestyle properties
-      // https://www.mapbox.com/guides/an-open-platform/#simplestyle
-      'marker-size': 'large',
-      'marker-color': '#BE9A6B',
-      'marker-symbol': 'cafe'
-    }
-  }).addTo(map);
+      id: 'omarimayerswalker.olj71bc9',
+      accessToken: 'pk.eyJ1Ijoib21hcmltYXllcnN3YWxrZXIiLCJhIjoiODJlZjMxYjhiYjJmZTkwMDBkZDFhYzM2OTU3NDQxZjMifQ.ZjdJwZ3elIR4Ubp0xNC9yw'
+    }).addTo(map);
 
 });
