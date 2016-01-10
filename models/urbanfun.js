@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost/urbanfun');
 
 var productsSchema = new Schema({
   _id: Number,

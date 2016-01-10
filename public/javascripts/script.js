@@ -7,10 +7,13 @@ $(document).ready(function() {
   $('#zip').submit(function(event) {
     event.preventDefault();
     var zip = $('input').val();
+    $('#results').html("");
     if (zipCheck(zip)) {
       var zipcode = {zipcode: zip};
       $.get('api/products', zipcode, function(results){
-        $('#results').html(results);
+        results.forEach(function(num) {
+          $('#results').append('<p>' + num.name + '</p>');
+        });
       });
     } else {
       console.log('not a zip');
@@ -20,7 +23,7 @@ $(document).ready(function() {
 });
 
 function zipCheck(num) {
-  if (num.length === 5 && Number(num)){
+  if (num.length === 5 && Number(num)) {
     return num;
   } else {
     return false;

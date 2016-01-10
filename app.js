@@ -26,12 +26,14 @@ app.use(express.static('public'));
 
 app.use('/', routes);
 
+mongoose.connect('mongodb://localhost/urbanfun');
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
+
 
 // error handlers
 
@@ -44,7 +46,6 @@ if (app.get('env') === 'development') {
       message: err.message,
       error: err
     });
-    mongoose.connect('mongodb://localhost/urbanfun');
   });
 }
 
