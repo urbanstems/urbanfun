@@ -47,6 +47,7 @@ $(document).ready(function() {
       // add marker by postal code
       var targetZip = L.marker(geoLongLat).addTo(map);
     });
+
   });
 
   // validates input for correct zip code format
@@ -59,7 +60,8 @@ $(document).ready(function() {
   }
 
   // map
-  var map = L.map('map').setView([39.7494, -104.9954], 15);
+  // ;
+  var map = L.map('map').setView([39.7494, -104.9954], 12);
 
   L.tileLayer(
     'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

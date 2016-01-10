@@ -1,0 +1,8 @@
+{ "_id" : 1, "name" : "Fun Mix", "price" : 45, "zipavailable" : [ 80202, 80203, 80204 ] }
+{ "_id" : 2, "name" : "Sun Mix", "price" : 25, "zipavailable" : [ 80202, 80204, 80206 ] }
+{ "_id" : 3, "name" : "Custom Mix", "price" : 65, "zipavailable" : [ 80202, 80205, 80208 ] }
+{ "_id" : 4, "name" : "Fancy Mix", "price" : 60, "zipavailable" : [ 80202, 80206, 80210 ] }
+{ "_id" : 5, "name" : "Wonder Mix", "price" : 40, "zipavailable" : [ 80202, 80207, 80212 ] }
+{ "_id" : 6, "name" : "Festive Mix", "price" : 45, "zipavailable" : [ 80202, 80208, 80214 ] }
+{ "_id" : 7, "name" : "Silly Mix", "price" : 15.50, "zipavailable" : [ 80202, 80209, 80216 ] }
+{ "_id" : 8, "name" : "Beautiful Mix", "price" : 35, "zipavailable" : [ 80202, 80210, 90203 ] }
